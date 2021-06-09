@@ -3,9 +3,6 @@ function consultarRestaurantes() {
     $.ajax({
         url: "http://api.algafood.local:8080/restaurantes",
         type: "get",
-        headers: {
-            "X-Teste": "Abc"
-        },
 
         success: function (response) {
             $("#conteudo").text(JSON.stringify(response));
